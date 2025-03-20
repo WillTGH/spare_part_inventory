@@ -1,0 +1,40 @@
+sort ussing button in the table's header to change sql ORDER BY {DONE}
+
+IN OUT show pop up form {DONE}
+
+use ORDER BY instead {DONE}
+
+seperate in/out form {DONE}
+
+search using LIKE {DONE}
+
+multiple input {DONE}
+
+delete item {DONE}
+
+login permission {DONE}
+
+multiple update {DONE}
+{
+    - redirect to new page
+    - button to send the thing into the thing
+    - make a new index just for item list and action (edit, delete, etc)
+    - index.php only for adding things and simple search
+}
+
+button hidden {DONE}
+
+filter log {DONE}
+{
+    selected (dropdown)
+    show only selected
+    use button fecthed from category. submit method change sql querry
+}
+
+backup {DONE}
+{
+    export: mysqldump -u [username] -p [database_name] > [output_file].sql
+    import: mysql -u [username] -p [database_name] < [input_file].sql
+}
+
+restore if exist rewrite?
