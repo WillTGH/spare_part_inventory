@@ -2,7 +2,7 @@
 
 services:
   app:
-    container_name: inventory-db-mysql
+    container_name: php-inventory-app
     build: .
     ports:
       - "8080:80"
