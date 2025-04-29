@@ -1,4 +1,4 @@
-<?php include 'sql_inoutflow.php'; ?>
+<?php include 'sql.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js";></script>
