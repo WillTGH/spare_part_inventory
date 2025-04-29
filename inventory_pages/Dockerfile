@@ -1,8 +1,14 @@
-#base image
-FROM php:8.2.0-apache
+# Use official PHP image with Apache
+FROM php:8.2-apache
 
-#working directory
-WORKDIR /var/www/html
+# Copy project files to Apache web root
+COPY . /var/www/html/
 
-#copy file
-COPY . .
+# Enable Apache mod_rewrite (if needed)
+RUN a2enmod rewrite
+
+# Set permissions (optional, depending on your project)
+RUN chown -R www-data:www-data /var/www/html
+
+# Expose port
+EXPOSE 80
