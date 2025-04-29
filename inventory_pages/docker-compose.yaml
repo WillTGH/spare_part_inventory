@@ -21,7 +21,7 @@ services:
     container_name: inventory-db-mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_ROOT_PASSWORD: 230900
       MYSQL_DATABASE: price_list_part_diesel
       MYSQL_USER: username
       MYSQL_PASSWORD: password
