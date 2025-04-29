@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   app:
+    container_name: price_list_part_diesel_mysql
     build: .
     ports:
       - "8080:80"
