@@ -2,7 +2,7 @@
 
 services:
   app:
-    container_name: price_list_part_diesel_mysql
+    container_name: inventory-db-mysql
     build: .
     ports:
       - "8080:80"
