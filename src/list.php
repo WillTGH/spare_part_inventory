@@ -1,3 +1,4 @@
+<?php include 'sql_inoutflow.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,9 +13,6 @@
         <link rel="stylesheet" type='text/css' href='style.css'>
     </head>
     <body>
-        <?php
-        include 'sql_list.php';
-        ?>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container" id='navbar'>
                 <a class="navbar-brand" href="index.php">BMS</a>
