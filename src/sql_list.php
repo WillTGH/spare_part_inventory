@@ -3,7 +3,7 @@ include 'sql.php';
 
 try{
     // Database connection
-    $conn = new PDO("mysql:host=localhost;dbname=price_list_part_diesel", "username", "password");
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Fetch data from MySQL
@@ -25,9 +25,9 @@ try{
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     if(isset($_POST['update'])){
-        $_SESSION['ids'] = $_POST['selected'];
-        header("Location: inoutflow.php");
-        exit();
+        // $_SESSION['ids'] = $_POST['selected'];
+        // header("Location: inoutflow.php");
+        // exit();
     }
     if(isset($_POST['database'])){
         if($_POST['database'] == 'export'){
