@@ -1,3 +1,6 @@
+<?php
+        include 'sql_index.php';
+        ?>
 <!DOCTYPE html>
 <html lang="en">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js";></script>
@@ -13,9 +16,7 @@
         <link rel="stylesheet" type='text/css' href='style.css'>
     </head>
     <body>
-        <?php
-        include 'sql_index.php';
-        ?>
+        
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container" id='navbar'>
                 <a class="navbar-brand" href="index.php">BMS</a>
