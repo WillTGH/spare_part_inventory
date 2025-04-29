@@ -7,6 +7,9 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 # Copy project files to Apache web root
 COPY . /var/www/html/
 
+# enable ouptput buffering
+RUN echo "output_buffering=On" > /usr/local/etc/php/conf.d/output-buffering.ini
+
 # Enable Apache mod_rewrite (if needed)
 RUN a2enmod rewrite
 
