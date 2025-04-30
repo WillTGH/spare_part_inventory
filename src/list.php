@@ -61,48 +61,49 @@
         ?>
 
         <!-- Form to submit all IDs -->
-        <form method="POST">
-            <table class='table'>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Category</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $currentCategory = '';
-                    // Generate table rows
-                    if(isset($data)) {
-                        foreach ($data as $row) {
-                        
-                        if ($row['category'] !== $currentCategory) {
-                            $currentCategory = $row['category'];
-                            echo "<tr><th colspan='7' style='background: #f0f0f0;'>{$currentCategory}</th></tr>";
+        <div class='md-5 content'>
+            <form method="POST">
+                <table class='table'>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Category</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                        $currentCategory = '';
+                        // Generate table rows
+                        if(isset($data)) {
+                            foreach ($data as $row) {
+                            
+                            if ($row['category'] !== $currentCategory) {
+                                $currentCategory = $row['category'];
+                                echo "<tr><th colspan='7' style='background: #f0f0f0;'>{$currentCategory}</th></tr>";
+                            }
+                            echo "<tr>
+                                    <td>{$row['part_name']}</td>
+                                    <td>{$row['quantity']}</td>
+                                    <td>{$row['category']}</td>
+                                    <td><input class='checkbox-medium' type='checkbox' name='selected[]' value='{$row['id']}'></td>
+                                </tr>";
+                            }
                         }
-                        echo "<tr>
-                                <td>{$row['part_name']}</td>
-                                <td>{$row['quantity']}</td>
-                                <td>{$row['category']}</td>
-                                <td><input class='checkbox-medium' type='checkbox' name='selected[]' value='{$row['id']}'></td>
-                            </tr>";
-                        }
-                    }
-                    ?>
-                </tbody>
-            </table>
-            <div class='container'>
-                <div class='row'>
-                    <button type='submit' name='update' value='update' class='btn btn-success btn-sm btn-l'>
-                        Update
-                        <span class='glyphicon glyphicon-wrench'></span>
-                    </button>
+                        ?>
+                    </tbody>
+                </table>
+                <div class='container'>
+                    <div class='row'>
+                        <button type='submit' name='update' value='update' class='btn btn-success btn-sm btn-l'>
+                            Update
+                            <span class='glyphicon glyphicon-wrench'></span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <!-- Submit Button -->
-        </form>
-
+                <!-- Submit Button -->
+            </form>
+        </div>
     </body>
 </html>
