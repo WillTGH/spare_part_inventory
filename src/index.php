@@ -1,6 +1,7 @@
-<?php
-        include 'sql_index.php';
-        ?>
+<?php 
+include 'sql_index.php';
+include 'header.php'; 
+?>
 <!DOCTYPE html>
 <html lang="en">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js";></script>
@@ -16,7 +17,7 @@
         <link rel="stylesheet" type='text/css' href='style.css'>
     </head>
     <body>
-        
+        <div id="live-data">Waiting for updates...</div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container" id='navbar'>
                 <a class="navbar-brand" href="index.php">BMS</a>
@@ -198,14 +199,14 @@
             </div>
         </div>
         <script>
-        function removeRequiredAttributes() {
-            // Get all input elements with the 'required' attribute
-            var requiredInputs = document.querySelectorAll('input[required], select[required], textarea[required]');
-            // Remove the 'required' attribute from each input
-            requiredInputs.forEach(function(input) {
-                input.removeAttribute('required');
-            });
-        }
+            function removeRequiredAttributes() {
+                // Get all input elements with the 'required' attribute
+                var requiredInputs = document.querySelectorAll('input[required], select[required], textarea[required]');
+                // Remove the 'required' attribute from each input
+                requiredInputs.forEach(function(input) {
+                    input.removeAttribute('required');
+                });
+            }
         </script>
     </body>
 </html>
