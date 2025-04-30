@@ -65,8 +65,8 @@
             <table class='table'>
                 <thead>
                     <tr>
-                        <th>ID</th>
                         <th>Name</th>
+                        <th>Quantity</th>
                         <th>Category</th>
                         <th>Action</th>
                     </tr>
@@ -83,8 +83,8 @@
                             echo "<tr><th colspan='7' style='background: #f0f0f0;'>{$currentCategory}</th></tr>";
                         }
                         echo "<tr>
-                                <td>{$row['id']}</td>
                                 <td>{$row['part_name']}</td>
+                                <td>{$row['quantity']}</td>
                                 <td>{$row['category']}</td>
                                 <td><input class='checkbox-medium' type='checkbox' name='selected[]' value='{$row['id']}'></td>
                             </tr>";

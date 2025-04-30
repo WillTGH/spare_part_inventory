@@ -1,6 +1,6 @@
 <?php 
 include 'sql_index.php';
-include 'header.php'; 
+// include 'header.php'; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@ include 'header.php';
         <link rel="stylesheet" type='text/css' href='style.css'>
     </head>
     <body>
-        <div id="live-data">Waiting for updates...</div>
+        <!-- <div id="live-data">Waiting for updates...</div> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container" id='navbar'>
                 <a class="navbar-brand" href="index.php">BMS</a>
